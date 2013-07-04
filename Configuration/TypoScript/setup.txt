@@ -1,0 +1,10 @@
+plugin.tx_disqus {
+	api {
+		scheme = https
+		host = disqus.com
+		path = api
+		version = 3.0
+		key =
+		forum =
+	}
+}
