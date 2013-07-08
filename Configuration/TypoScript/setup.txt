@@ -7,4 +7,25 @@ plugin.tx_disqus {
 		key =
 		forum =
 	}
+	endpoint {
+		threads {
+			listPopular {
+				arguments {
+
+				}
+				renderObj = COA
+				renderObj {
+					wrap = <ul>|</ul>
+					1 = TEXT
+					1 {
+						wrap = <li>|</li>
+						typolink {
+							parameter.field = link
+						}
+						field = title
+					}
+				}
+			}
+		}
+	}
 }
