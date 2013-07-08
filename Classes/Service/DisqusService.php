@@ -59,8 +59,8 @@ class Tx_Disqus_Service_DisqusService {
 	 *
 	 * @return void
 	 */
-	public function __construct($endpoint = NULL, array $configuration = NULL) {
-		if ($configuration === NULL || $endpoint === NULL) {
+	public function __construct($endpoint = NULL, array $configuration = array()) {
+		if ($endpoint === NULL) {
 			die('configuration must be given');
 		}
 		if (is_array($configuration) !== TRUE) {
